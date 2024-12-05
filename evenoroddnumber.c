@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-int isEven(int number) {
-    return number % 2 == 0;
-}
-
 int main() {
     int number;
+
+    // Prompt the user to enter a number
     printf("Enter a number: ");
     scanf("%d", &number);
 
-    if (isEven(number)) {
-        printf("%d is even.\n", number);
+    // Check if the number is even or odd
+    if (number % 2 == 0) {
+        printf("%d is an even number.\n", number);
     } else {
-        printf("%d is odd.\n", number);
+        printf("%d is an odd number.\n", number);
     }
 
-return 0;
+    return 0;
 }
+
